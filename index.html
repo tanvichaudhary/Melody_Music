@@ -13,22 +13,18 @@ CREATED AND DESIGNED BY -:
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <meta http-equiv="X-UA-Compatible" content="ie=edge">
          <title>MELODY MUSIC - Listen to New and Old Hindi Songs Online</title>
-         <link rel="stylesheet" href="./assets/stylesheets/preloader.css">
+         <script src="./assets/javascript/jquery-3.3.1.min.js"></script>
          <script src="./assets/javascript/preloader.js"></script>
-         <link rel="stylesheet" href="./assets/stylesheets/custom.css">
-         <script src="./assets/javascript/songs.js"></script>
-         <script src="./assets/javascript/songs1.js"></script>
-         <script src="./assets/javascript/songs2.js"></script>
-         <script src="./assets/javascript/model.js"></script>  
-         <script src="./assets/javascript/scripts.js"></script> 
+         <link rel="stylesheet" href="./assets/stylesheets/preloader.css">
          <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.min.css">
          <link rel="icon" href="./assets/images/musicfavicon.png">
          <link rel="stylesheet" href="./assets/Bootstrap/js/bootstrap.min.js">
          <link rel="stylesheet" href="./assets/stylesheets/fontawesome-all.min.css">
+         <link rel="stylesheet" href="./assets/stylesheets/custom.css">
      </head>
      <body>
      <div id="preloader">
-         <div class="container">
+         <div class="container loader">
              <div class="dash uno"></div>
              <div class="dash dos"></div>
              <div class="dash tres"></div>
@@ -143,7 +139,7 @@ CREATED AND DESIGNED BY -:
      <div id="container2">
          <div class="container-fluid">
          <form class="form-inline my-2 my-lg-0">
-         <input class="form-control mr-sm-2 " type="search" id="searchSong" placeholder="Search for Dil Diyan Gallan,Bom Diggy,Tareefan...." aria-label="Search">
+         <input class="form-control mr-sm-2 " type="search" id="searchSong" onchange="filter()" placeholder="Search for Dil Diyan Gallan,Bom Diggy,Tareefan...." aria-label="Search">
          <span id="searchicon">
                  <i class="fas fa-search"></i>
              </span>
@@ -270,7 +266,11 @@ CREATED AND DESIGNED BY -:
      <br>
      <br>
      <br>
-     
+     <script src="./assets/javascript/songs.js"></script>
+     <script src="./assets/javascript/songs1.js"></script>
+     <script src="./assets/javascript/songs2.js"></script>
+     <script src="./assets/javascript/model.js"></script>  
+     <script src="./assets/javascript/scripts.js"></script> 
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
