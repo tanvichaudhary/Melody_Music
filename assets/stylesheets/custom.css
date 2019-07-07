@@ -687,3 +687,6 @@ font-weight: 500;
         color: #28A745;
         padding-left: 0.5%; 
     }
+.infomodal{
+    color: black !important;
+}
