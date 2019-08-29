@@ -249,6 +249,7 @@ function playSong2(songName){
 function seekSong(){
     audio.currentTime = slider.value;
 }
+// NEXT SONG FUNCTION 
 
 function nextSong(){
     var songId = audio.title;
@@ -264,9 +265,23 @@ function nextSong(){
     playSong(songName);
 }
 
-function previousSong(){
+//PREVIOUS SONG FUNCTION 
 
+function previousSong(){
+    var songId = audio.title;
+    var n_song = parseInt(songId)-1;
+    var songName;
+    console.log(n_song);
+    for(var i = 0; i < songsArray.length; i++){
+        if(songsArray[i].songId == n_song) {
+            songName = songsArray[i].songName;
+            console.log(n_song, songName);
+        }
+    }
+    playSong(songName);
 }
+
+// PLAY/PAUSE FUNCTION
 
 function toggleSong(){
     if(togglePlay) {
@@ -349,6 +364,7 @@ function showPlayList(){
     })   
 }
 
+//FOR SEARCHBAR
 function search(){
     console.log('length of your search', document.getElementById('searchSong').value.length);
     if(document.getElementById('searchSong').value.length!==0){
